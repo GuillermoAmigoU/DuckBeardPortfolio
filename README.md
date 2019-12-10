@@ -1,1 +1,0 @@
-# Yaryhus.github.io/DuckBeardPortfolio/
