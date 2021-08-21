@@ -10,7 +10,7 @@
     <meta name="twitter:title" content="Guillermo Amigó Portfolio">
     <meta name="twitter:image" content="assets/img/Mine/bigIcon.png">
     <meta name="twitter:description" content="The personal portfolio and web of Guillermo Amigó">
-    <meta name="description" content="Survive with only one stat on this roguelike!">
+    <meta name="description" content="A roguelike where everything depends on one value! Survive however you can on Rogue One!">
     <link rel="icon" type="image/png" sizes="79x80" href="assets/img/Mine/favicon.png">
     <link rel="icon" type="image/png" sizes="79x80" href="assets/img/Mine/favicon.png">
     <link rel="icon" type="image/png" sizes="600x600" href="assets/img/Mine/bigIcon.png">
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
@@ -38,9 +39,9 @@
             <div><a class="navbar-brand" style="padding: 0px;margin-left: 0px;height: 78px;font-family: Roboto, sans-serif;margin-top: 0px;margin-bottom: 0px;padding-top: 25px;color: rgb(255,255,255)!important;margin-right: 0px;" href="index.html"> <img class="img-fluid" src="assets/img/Mine/bigIcon.png" style="height: 50px;margin-top: 0;margin-right: 10px;">Guillermo Amigó 'Duckbeard'</a></div><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="filter: invert(100%);padding-bottom: 4px;margin-bottom: -20px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color: #fff!important;filter: invert(0%) saturate(0%) sepia(0%);opacity: 1;"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ml-auto" style="margin-top:13px;">
-                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" style="color: rgb(255,255,255)!important;" href="index.html#about">Who am I</a></li>
-                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:100" href="index.html#services" style="color: rgb(255,255,255)!important;">Roles</a></li>
                     <li class="nav-item"><a class="nav-link" uk-scroll="offset:100" href="index.html#portfolio" style="color: rgb(255,255,255)!important;">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:100" href="index.html#services" style="color: rgb(255,255,255)!important;">Roles</a></li>
+                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" style="color: rgb(255,255,255)!important;" href="index.html#about">Who am I</a></li>
                     <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" href="index.html#contact" style="color: rgb(255,255,255)!important;">Contact</a></li>
                 </ul>
             </div>
@@ -59,10 +60,10 @@
     <section id="about" class="bg-primary" style="background-color: rgb(22,32,42)!important;">
         <div class="container">
             <div class="row">
-                <div class="col offset-lg-8 mx-auto text-center"><img class="img-thumbnail img-fluid" data-aos="zoom-in" src="assets/img/Mine/RogueOneWP.png" style="width: 763px;">
+                <div class="col offset-lg-8 mx-auto text-center">
                     <h2 class="text-white section-heading" style="color: rgb(255,255,255)!important;background-color: rgba(255,255,255,0);"><br><br>Rogue One, A roguelike with <strong>Only one</strong> stat!<br><br></h2>
                     <hr class="light my-4" style="color: rgb(0,0,0)!important;background-color: #000000;"><a class="text-center" data-aos="zoom-in" href="https://itch.io/jam/gmtk-2019/rate/461305" style="font-size: 30px;margin: 0;margin-top: 0;margin-bottom: 0;color: rgb(255,92,0)!important;"><br>Play it here!<br><br></a>
-                    <p class="text-center text-faded mb-4" style="color: #ffffff;font-size: 20px;margin-bottom: 0;">Some friends and I participated on the Game Makers <br>Toolkit Game Jam 2019, which main theme was "Only One". It was a blast <br>working with them, and, we came with a very smart idea, which then lead <br>to some interesting design choices and design.<br> <br> <br> Our game, Rogue One (pun intended) is a rogue like game,<br> where all the stats are the same (Roguelike with one value). This means<br> your health, damage and difficulty, will increase or decrease with the <br>so-called "value". You lose value by getting hit or buying items at the <br>store, and gain value by killing enemy and getting their loot. Also, you<br> have what we called Blessings and Curses, marked on your HUD. These can<br> give you speed, or fire vulnerability, among others. This creates <br>different playstyles, from people who stay low on value to have more <br>speed or people who go "full value" but are very vulnerable to certain <br>elements.<br> <br> <br> Obviously we couldn't have all the values of the game <br>with the same parameter, because dealing 555 damage, having 555 HP and <br>receiving 555 damage seems a bit boring and plain. Our solution was <br>making some stats dependant of "the value", and other dependant of the <br>level. For example, damage, HP, and the blessing/curses were dependant <br>of this value, but the enemies speed, or attack speed increased with the<br> level count. This lead us into interesting evolutions, while preserving<br> the strategy of the game. We also had to make the value influence <br>differently the game: The HP was linear, '40 value = 40 hp', but what <br>about the blessing? Having -40% speed was a bit unfunny, so we made some<br> adjustments, making, such as, logarithmic functions instead of linear <br>to increase the value, or having a clamped value (for example , you <br>cannot have more than a 20% movement reduction). <br> <br> <br> The game was done during 2 days of work with a team of 4<br> people. I did all sound and music for the game. I participated to the <br>concept and designed the difficulty curves, made almost all levels and <br>some HUD elements. <br> <br> <br> This game as we were told by the reviewers at the jam, <br>has great potential. This said, we went for the moon, so lots of <br>features were cut to create a Jam game, like paying to eliminate a <br>curse. We have plans with this one. <br> <br> <br> All content and trademarks property of their respective owners.<br> <br><br> <br><br></p>
+                    <p class="text-center text-faded mb-4" style="color: #ffffff;font-size: 20px;margin-bottom: 0;">Some colleagues and I participated on the Game Maker's <br>Toolkit Game Jam 2019, which main theme was "Only One".<br><br> Our game, Rogue One (pun intended) is a rogue like game,<br> where all the stats are the same value. This means<br> your health, damage and difficulty, will increase or decrease with the <br>so-called "value". To spice things up, there are also Blessings and Curses affected by the <br>value. These can give you speed, or fire vulnerability, among others. This creates <br>different playstyles, and creates a risk-reward style of play.<br><br> To increase its difficulty and provide a fair Core loop, the values of the game do not<br>scalate the same way with the parameter: We used diferent scales/curves:<br>The HP was increasing linearly, but blessings behaved as&nbsp; logarithmic functions instead <br>(to avoid high values ruining the experience),&nbsp;in some cases we needed clamped values. <br> <br> The game was done during 2 days of work with a team of 4<br> people. I did all sound and music for the game. I participated to the <br>concept, designed the difficulty curves and core loop, made almost all levels, <br>and some HUD elements. <br><br> All content and trademarks property of their respective owners.<br><br></p><img class="img-thumbnail img-fluid" data-aos="zoom-in" src="assets/img/Mine/RogueOneWP.png" style="width: 763px;">
                 </div>
             </div>
         </div>
@@ -98,14 +99,7 @@
     <footer id="footerpad">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-8 mx-auto">
-                    <ul class="text-left list-inline text-center" style="padding-top: 0px;">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/guillermoamigourda/"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/Yaryhus?tab=repositories"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="https://twitter.com/GuillermoAmigoU"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="https://duckbeard.itch.io/"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-gamepad fa-stack-1x fa-inverse"></i></span></a></li>
-                    </ul><p class="copyright text-muted text-center">Copyright &copy; Duckbeard 2019</p>
-                </div>
+                <div class="col-md-6 col-lg-8 mx-auto"><p class="copyright text-muted text-center">Copyright &copy; Duckbeard 2021</p></div>
             </div>
         </div>
     </footer>
