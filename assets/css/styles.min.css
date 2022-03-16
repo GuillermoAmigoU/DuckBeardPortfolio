@@ -132,6 +132,9 @@ header.masthead p {
 -ms-flex: 0 0 33.33333%; flex: 0 0 33.33333%; max-width: 33.33333%; {
 }
 
+@media(min.width:992px) {
+}
+
 .cd-words-wrapper {
   display: inline-block;
   position: relative;
