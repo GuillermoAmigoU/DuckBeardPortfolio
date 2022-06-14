@@ -769,7 +769,7 @@ a:active, a:hover {
 }
 
 .uk-link:hover, a:hover {
-  color: #0f6ecd;
+  color: #f05f40;
   text-decoration: underline;
 }
 
@@ -3730,7 +3730,7 @@ a, area, button, input, label, select, summary, textarea {
 }
 
 a:focus, a:hover {
-  color: #0085A1;
+  color: #f05f40;
 }
 
 .bg-primary {
