@@ -1,1 +1,1 @@
-# GuillermoAmigoU.github.io/DuckBeardPortfolio/
+# GuillermoAmigoU.github.io/GuillermoAmigoUPortfolio/
