@@ -101,7 +101,7 @@ header.masthead p {
 
 @media (min-width: 300px) {
   #header {
-    background-image: url("../../assets/img/Mine/ChikuchiRound.png");
+    background-image: url("/assets/img/Mine/ChikuchiRound.png");
   }
 }
 

@@ -1,1 +1,1 @@
-{"short_name":"Guillermo Amigo","name":"Guillermo Amigo","icons":[{"src":"/assets/img/Mine/bigIcon.png","type":"image/png","sizes":"600x600"},{"src":"/assets/img/Mine/bigIcon.png","type":"image/png","sizes":"600x600"}],"start_url":"index.html","display":"fullscreen"}
+{"short_name":"Guillermo Amigo","name":"Guillermo Amigo","icons":[{"src":"/assets/img/Mine/bigIcon.png","type":"image/png","sizes":"600x600"},{"src":"/assets/img/Mine/bigIcon.png","type":"image/png","sizes":"600x600"}],"start_url":"/index.html","display":"fullscreen"}
